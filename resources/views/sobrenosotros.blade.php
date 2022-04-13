@@ -1,8 +1,8 @@
 @extends('layouts.master')
 @section('title')
-Licencias
+Sobre nosotros
 @endsection
 
 @section('content')
-<p>aqui aparecera cada licencia</p>
+<p>aqui va la informacion de sobre nosotros</p>
 @endsection

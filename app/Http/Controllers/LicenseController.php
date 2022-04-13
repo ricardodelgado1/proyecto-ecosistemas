@@ -11,5 +11,10 @@ class LicenseController extends Controller
         //return view('');
         return view('home');
     }
-      
+    public function getLicencias()
+    {
+        //return view('');
+        return view('licencia.index');
+    }
+
 }
