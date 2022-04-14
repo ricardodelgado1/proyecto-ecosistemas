@@ -9,7 +9,7 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Acerca de</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
     </ul>
-    <p class="text-center text-muted">&copy; 2021 Licencias ambientales, Inc</p>
+    <p class="text-center text-muted">&copy; 2021 Licencias ambientales, @Inc</p>
   </footer>
 </div>
 
