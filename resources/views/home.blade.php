@@ -45,10 +45,11 @@ Inicio
         <img src="/img/1.jpg" class="card-img-top" alt="imagen1">
         <div class="card-body">
             <h5 class="card-title">Ambiental Ordinaria</h5>
-            <p class="card-text">No incluye el otorgamiento de permisos, autorizaciones o concesiones para el uso,
-                aprovechamiento o movilización de los recursos naturales renovables. Por ejemplo,
-                la necesitará una empresa que tenga que hacer vertimentos a un río o una empresa que vaya a hacer
-                aprovechamiento forestal.</p>
+            <p class="card-text">Es la otorgada por la autoridad ambiental competente y en la cual se establecen
+                los requisitos, condiciones y obligaciones que el beneficiario de la licencia ambiental debe cumplir
+                para prevenir, mitigar, compensar y manejar los efectos ambientales del proyecto, obra o actividad
+                autorizada, sin disponer sobre el otorgamiento de los permisos, autorizaciones o concesiones para el
+                 uso, aprovechamiento o movilización de los recursos naturales renovables.</p>
             <a href="{{ url('/motos' ) }}" class="btn btn-primary stretched-link btn-sm">
             <i class="fas fa-igloo"></i>Conocer mas</a>
         </div>
@@ -59,8 +60,10 @@ Inicio
         <img src="/img/2.jpg" class="card-img-top" alt="imagen2">
         <div class="card-body">
             <h5 class="card-title">Ambiental Unica</h5>
-            <p class="card-text"> Incluye, a solicitud del peticionario, los permisos, autorizaciones o concesiones
-                necesarios para el desarrollo del proyecto o actividad. Por ejemplo, la construcción de una carretera o un matadero.</p>
+            <p class="card-text">Es la otorgada por la autoridad ambiental competente y que, a solicitud del peticionario,
+                incluye los permisos, autorizaciones o concesiones, necesarios para el desarrollo del proyecto,
+                obra o actividad. La vigencia de estos permisos, concesiones y autorizaciones de acuerdo con su naturaleza,
+                 podrá ser la misma de la licencia ambiental</p>
             <a href="{{ url('/motos' ) }}" class="btn btn-primary stretched-link btn-sm">
             <i class="fas fa-igloo"></i>Conocer mas</a>
         </div>
@@ -72,8 +75,9 @@ Inicio
         <img src="/img/5.jpg" class="card-img-top" alt="imagen3">
         <div class="card-body">
             <h5 class="card-title">Ambiental Global</h5>
-            <p class="card-text">Es de competencia exclusiva del Minambiente y que puede ser ordinaria o única y se otorga para las obras o actividades
-                relacionadas con la explotación de campos petroleros y de gas.</p>
+            <p class="card-text"> La licencia ambiental global puede ser ordinaria o única. Es de competencia exclusiva del
+                Ministerio del Medio Ambiente, y en virtud de ella se autorizan todas las obras o actividades relacionadas
+                con la explotación de campos petrolíferos y de gas.</p>
             <a href="{{ url('/motos' ) }}" class="btn btn-primary stretched-link btn-sm">
             <i class="fas fa-igloo"></i>Conocer mas</a>
         </div>
