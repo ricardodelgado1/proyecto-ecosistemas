@@ -34,13 +34,17 @@ Licencias
     <tbody>
     @foreach( $licencias as $key => $licencia )
         <tr>
-            <td scope="row">{{$licencia->id}}</td>
             <td>{{$licencia->nombre}}</td>
             <td>{{$licencia->fecha}}</td>
             <td>{{$licencia->departamento}}</td>
             <td>{{$licencia->tipo}}</td>
-            <td>{{$licencia->estado}}</td>
-            </tr>
+            @if ($licencia->estado)
+            <td>Aprobada</td>
+            @else
+            <td>No Aprobada</td>
+            @endif
+
+        </tr>
     @endforeach
 
 

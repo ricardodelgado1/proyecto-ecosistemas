@@ -20,12 +20,12 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $faker = Faker::create();
         $gender = $faker->randomElement(['male', 'female']);
-    	foreach (range(1,30) as $index) {
+    	foreach (range(1,20) as $index) {
             DB::table('licencias')->insert([
                 'nombre' => $faker->name($gender),
                 'fecha' => $faker->date(),
-                'departamento' => $faker->text(),
-                'tipo' => $faker->name(),
+                'departamento' => $faker->name(),
+                'tipo' => $faker->text(),
                 'estado' => $faker->boolean(),
             ]);
         }
