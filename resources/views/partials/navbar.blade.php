@@ -11,12 +11,12 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{ url('/') }}">
-            <!-- <span class="fas fa-home"></span>   -->
+            <span class="fas fa-home"></span>
               Inicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page"  href="{{ url('/licencias') }}">
-            <!-- <span class="fas fa-motorcycle"></span>  -->
+            <span class="fas  fa-id-card"></span>
              Licencias</a>
         </li>
         <li class="nav-item dropdown">
@@ -42,7 +42,8 @@
       <ul></ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-light " type="submit">Buscar</button>
+        <button class="btn btn-outline-light " type="submit">
+        <span class="fas fa-search"></span></button>
       </form>
 
 
