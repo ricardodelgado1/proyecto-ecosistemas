@@ -19,15 +19,16 @@ Licencias
 
 
 <h2>Licencias Ambientales</h2>
+<br>
 
-<table id="example" class="table table-striped" style="width:100%">
+<table id="example" class="table table-striped " style="width:100%" >
     <thead>
         <tr>
-                <th>codigo</th>
-                <th>nombre</th>
-                <th>departamento</th>
-                <th>tipo</th>
-                <th>estado</th>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Departamento</th>
+                <th>Tipo</th>
+                <th>Estado</th>
         </tr>
     </thead>
     <tbody>
@@ -35,6 +36,7 @@ Licencias
         <tr>
             <td scope="row">{{$licencia->id}}</td>
             <td>{{$licencia->nombre}}</td>
+            <td>{{$licencia->fecha}}</td>
             <td>{{$licencia->departamento}}</td>
             <td>{{$licencia->tipo}}</td>
             <td>{{$licencia->estado}}</td>

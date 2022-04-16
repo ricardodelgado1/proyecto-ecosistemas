@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('licencias', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->date('fecha');
             $table->string('departamento');
             $table->string('tipo');
             $table->boolean('estado')->nullable()->default(false);

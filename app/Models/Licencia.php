@@ -10,6 +10,7 @@ class Licencia extends Model
     use HasFactory;
     protected $fillable = [
         'nombre',
+        'fecha',
         'departamento',
         'tipo',
         'estado',
