@@ -5,4 +5,102 @@ Licencias
 
 @section('content')
 <p>aqui aparecera cada licencia</p>
+
+
+
+
+
+
+
+<div class="container">
+    <table class="table table-striped table-inverse table-responsive">
+        <thead class="thead-inverse">
+            <tr>
+                <th>codigo</th>
+                <th>nombre</th>
+                <th>departamento</th>
+                <th>tipo</th>
+                <th>estado</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">001</td>
+                    <td>licensia de explotacion Petrolera</td>
+                    <td>Nariño</td>
+                    <td>Hidrocarburos</td>
+                    <td>Aprobada</td>
+                </tr>
+                <tr>
+                @foreach( $licencias as $key => $licencia )
+                <tr>
+                     <td scope="row">{{$licencia->id}}</td>
+                     <td>{{$licencia->nombre}}</td>
+                     <td>{{$licencia->departamento}}</td>
+                     <td>{{$licencia->tipo}}</td>
+                     <td>{{$licencia->estado}}</td>
+                </tr>
+                @endforeach
+            </tbody>
+    </table>
+
+
+
+
+
+
+
+
+    <div class="container mt-5">
+    <h2 class="mb-4">Laravel 7|8 Yajra Datatables Example</h2>
+    <table class="table table-bordered yajra-datatable">
+        <thead>
+            <tr>
+
+                <th>Nombre</th>
+                <th>Departameto</th>
+                <th>Tipo</th>
+                <th>Estado</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript">
+  $(function () {
+
+    var table = $('.yajra-datatable').DataTable({
+        processing: true,
+        serverSide: true,
+        ajax: "{{ route('licencias.table') }}",
+        columns: [
+            {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+            {data: 'nombre', name: 'nombre'},
+            {data: 'departamento', name: 'departamento'},
+            {data: 'tipo', name: 'tipo'},
+            {data: 'estado', name: 'estado'},
+
+            {
+                data: 'action',
+                name: 'action',
+                orderable: true,
+                searchable: true
+            },
+        ]
+    });
+
+  });
+</script>
+
+
+</div>
 @endsection

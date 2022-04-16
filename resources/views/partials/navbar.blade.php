@@ -36,7 +36,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="{{ url('/contacto') }}">
-            <span class="fas fa-id-card"></span>  Contactos</a>
+            <span class="fas fa-id-card"></span>  Contacto</a>
         </li>
       </ul>
       <ul></ul>
