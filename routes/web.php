@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LicenseController;
+use App\Http\Controllers\EstadisticasController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,6 +20,8 @@ Route::get('/contacto', 'App\\Http\\Controllers\\ContactoController@getContacto'
 
 Route::get('/sobrenosotros', 'App\\Http\\Controllers\\ContactoController@getSobrenosotros');
 
+//Route::get('/estadisticas', 'App\\Http\\Controllers\\EstadisticasController@getEstadistica');
+Route::get('estadisticas',[EstadisticasController::class, 'index']);
 
 Route::get('/welcome', function () {
     return view('welcome');

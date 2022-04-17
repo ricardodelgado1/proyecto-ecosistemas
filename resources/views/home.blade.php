@@ -49,7 +49,7 @@ Inicio
                 los requisitos, condiciones y obligaciones que el beneficiario de la licencia ambiental debe cumplir
                 para prevenir, mitigar, compensar y manejar los efectos ambientales del proyecto, obra o actividad
                 autorizada, sin disponer sobre el otorgamiento de los permisos, autorizaciones o concesiones para el
-                 uso, aprovechamiento o movilización de los recursos naturales renovables.</p>
+                git uso, aprovechamiento o movilización de los recursos naturales renovables.</p>
             <a href="{{ url('/motos' ) }}" class="btn btn-primary stretched-link btn-sm">
             <i class="fas fa-igloo"></i>Conocer mas</a>
         </div>

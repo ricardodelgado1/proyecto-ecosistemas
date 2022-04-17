@@ -19,7 +19,7 @@
             <span class="fas  fa-id-card"></span>
              Licencias</a>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="fas fa-list-alt"></span>  Estadisticas
           </a>
@@ -29,7 +29,13 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{{ url('/pqrs') }}">otres</a></li>
           </ul>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="{{ url('/estadisticas') }}">
+            <span class="fas  fa-id-card"></span>
+             Estadisticas</a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link active" href="{{ url('/sobrenosotros') }}">
             <span class=" fas fa-users"></span>  Sobre Nosotros</a>

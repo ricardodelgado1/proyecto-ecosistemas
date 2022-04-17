@@ -24,7 +24,7 @@ Contacto
         <br>
         <div class="form-group">
           <button type=" button" class="btn btn-success">Enviar</button>
-        </div
+    </div>
     </form>
 
 </div>
