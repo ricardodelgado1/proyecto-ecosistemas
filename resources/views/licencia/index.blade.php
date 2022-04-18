@@ -24,8 +24,9 @@ Licencias
 <table id="example" class="table table-striped " style="width:100%" >
     <thead>
         <tr>
-                <th>Nombre</th>
-                <th>Fecha</th>
+                <th>Nombre Proyecto</th>
+                <th>Solicitante</th>
+                <th>Fecha Inicio Trámite</th>
                 <th>Departamento</th>
                 <th>Tipo</th>
                 <th>Estado</th>
@@ -35,15 +36,11 @@ Licencias
     @foreach( $licencias as $key => $licencia )
         <tr>
             <td>{{$licencia->nombre}}</td>
+            <td>{{$licencia->solicitante}}</td>
             <td>{{$licencia->fecha}}</td>
             <td>{{$licencia->departamento}}</td>
             <td>{{$licencia->tipo}}</td>
-            @if ($licencia->estado)
-            <td>Aprobada</td>
-            @else
-            <td>No Aprobada</td>
-            @endif
-
+            <td>{{$licencia->estado}}</td>
         </tr>
     @endforeach
 
