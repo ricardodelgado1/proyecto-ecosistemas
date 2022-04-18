@@ -64,7 +64,7 @@ Inicio
                 incluye los permisos, autorizaciones o concesiones, necesarios para el desarrollo del proyecto,
                 obra o actividad. La vigencia de estos permisos, concesiones y autorizaciones de acuerdo con su naturaleza,
                  podrá ser la misma de la licencia ambiental</p>
-            <a href="{{ url('/motos' ) }}" class="btn btn-primary stretched-link btn-sm">
+            <a href="{{ url('/#' ) }}" class="btn btn-primary stretched-link btn-sm">
             <i class="fas fa-igloo"></i>Conocer mas</a>
         </div>
       </div>
@@ -78,7 +78,7 @@ Inicio
             <p class="card-text"> La licencia ambiental global puede ser ordinaria o única. Es de competencia exclusiva del
                 Ministerio del Medio Ambiente, y en virtud de ella se autorizan todas las obras o actividades relacionadas
                 con la explotación de campos petrolíferos y de gas.</p>
-            <a href="{{ url('/motos' ) }}" class="btn btn-primary stretched-link btn-sm">
+            <a href="{{ url('/#' ) }}" class="btn btn-primary stretched-link btn-sm">
             <i class="fas fa-igloo"></i>Conocer mas</a>
         </div>
        </div>

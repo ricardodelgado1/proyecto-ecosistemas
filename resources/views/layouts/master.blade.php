@@ -3,6 +3,9 @@
 <head>
     <title>@yield('title')</title>
 
+    <link  href="<c:url value="/resources/bootstrap/js/jquery.min.js">
+<link  href="<c:url value="/resources/bootstrap/js/bootstrap.min.js">
+<link  href="<c:url value="/resources/bootstrap/js/bootstrap.bundle.min.js">
     <!-- Scripts -->
 
 
