@@ -29,5 +29,9 @@ class DatabaseSeeder extends Seeder
                 'estado' => $faker->boolean(),
             ]);
         }
+        $this->call(EstadisticaSeeder::class);
+        $this->call(EstadoSeeder::class);
+        $this->call(SolicitudSeeder::class);
+
     }
 }

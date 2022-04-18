@@ -8,14 +8,36 @@ Estadisticas
 <div class="container mt-5">
     <div class="row">
         <div class="col">
-            <div id="container"></div>
+            <div id="container1"></div>
         </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <div id="container2"></div>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <div id="container3"></div>
+        </div>
+
     </div>
 </div>
  <script>
+
+
+
+
+
+
+
      //grafico de Tortas
 
-    /*  Highcharts.chart('container', {
+Highcharts.chart('container1', {
     chart: {
         plotBackgroundColor: null,
         plotBorderWidth: null,
@@ -23,7 +45,7 @@ Estadisticas
         type: 'pie'
     },
     title: {
-        text: 'Estadisticas, Licencias Ambientales 2022'
+        text: 'Estadisticas, Por estado de las Licencias'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -44,19 +66,19 @@ Estadisticas
         }
     },
     series: [{
-        name: 'Brands',
+        name: 'Estadistica',
         colorByPoint: true,
-         data: <?= $data ?>
+         data: <?= $data2 ?>
     }]
-}); */
+});
 //----------------------------------------
 // grafico de columnas
-Highcharts.chart('container', {
+Highcharts.chart('container2', {
     chart: {
         type: 'column'
     },
     title: {
-        text: 'Estadisticas, Licencias Ambientales 2022'
+        text: 'Estadisticas, Licencias por sectores'
     },
     subtitle: {
         // text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
@@ -95,237 +117,107 @@ Highcharts.chart('container', {
 
     series: [
         {
-            name: "Estadisticas",
+            name: "Estados",
             colorByPoint: true,
             data:<?= $data ?>
         }
     ],
-    /* drilldown: {
-        breadcrumbs: {
-            position: {
-                align: 'right'
-            }
-        },
-        series: [
-            {
-                name: "Sector Minero",
-                id: "minero",
-                data: [
-                    [
-                        "v65.0",
-                        0.1
-                    ],
-                    [
-                        "v64.0",
-                        1.3
-                    ],
-                    [
-                        "v63.0",
-                        53.02
-                    ],
-                    [
-                        "v62.0",
-                        1.4
-                    ],
-                    [
-                        "v61.0",
-                        0.88
-                    ],
-                    [
-                        "v60.0",
-                        0.56
-                    ],
-                    [
-                        "v59.0",
-                        0.45
-                    ],
-                    [
-                        "v58.0",
-                        0.49
-                    ],
-                    [
-                        "v57.0",
-                        0.32
-                    ],
-                    [
-                        "v56.0",
-                        0.29
-                    ],
-                    [
-                        "v55.0",
-                        0.79
-                    ],
-                    [
-                        "v54.0",
-                        0.18
-                    ],
-                    [
-                        "v51.0",
-                        0.13
-                    ],
-                    [
-                        "v49.0",
-                        2.16
-                    ],
-                    [
-                        "v48.0",
-                        0.13
-                    ],
-                    [
-                        "v47.0",
-                        0.11
-                    ],
-                    [
-                        "v43.0",
-                        0.17
-                    ],
-                    [
-                        "v29.0",
-                        0.26
-                    ]
-                ]
-            },
-            {
-                name: "Sector Energetico",
-                id: "energetico",
-                data: [
-                    [
-                        "v58.0",
-                        1.02
-                    ],
-                    [
-                        "v57.0",
-                        7.36
-                    ],
-                    [
-                        "v56.0",
-                        0.35
-                    ],
-                    [
-                        "v55.0",
-                        0.11
-                    ],
-                    [
-                        "v54.0",
-                        0.1
-                    ],
-                    [
-                        "v52.0",
-                        0.95
-                    ],
-                    [
-                        "v51.0",
-                        0.15
-                    ],
-                    [
-                        "v50.0",
-                        0.1
-                    ],
-                    [
-                        "v48.0",
-                        0.31
-                    ],
-                    [
-                        "v47.0",
-                        0.12
-                    ]
-                ]
-            },
-            {
-                name: "Sector Hidrocarburos",
-                id: "hidrocarburos",
-                data: [
-                    [
-                        "v11.0",
-                        6.2
-                    ],
-                    [
-                        "v10.0",
-                        0.29
-                    ],
-                    [
-                        "v9.0",
-                        0.27
-                    ],
-                    [
-                        "v8.0",
-                        0.47
-                    ]
-                ]
-            },
-            {
-                name: "Infraestructura: carreteras",
-                id: "carreteras",
-                data: [
-                    [
-                        "v11.0",
-                        3.39
-                    ],
-                    [
-                        "v10.1",
-                        0.96
-                    ],
-                    [
-                        "v10.0",
-                        0.36
-                    ],
-                    [
-                        "v9.1",
-                        0.54
-                    ],
-                    [
-                        "v9.0",
-                        0.13
-                    ],
-                    [
-                        "v5.1",
-                        0.2
-                    ]
-                ]
-            },
-            {
-                name: "Infraestructura: puerto",
-                id: "puerto",
-                data: [
-                    [
-                        "v16",
-                        2.6
-                    ],
-                    [
-                        "v15",
-                        0.92
-                    ],
-                    [
-                        "v14",
-                        0.4
-                    ],
-                    [
-                        "v13",
-                        0.1
-                    ]
-                ]
-            },
-            {
-                name: "Otras",
-                id: "otras",
-                data: [
-                    [
-                        "v50.0",
-                        0.96
-                    ],
-                    [
-                        "v49.0",
-                        0.82
-                    ],
-                    [
-                        "v12.1",
-                        0.14
-                    ]
-                ]
-            }
-        ]
-    } */
+
 });
+
+
+//----------------------------------------
+Highcharts.chart('container3', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Estadisticas, Por Solicitudes de Licencias'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+            }
+        }
+    },
+    series: [{
+        name: 'Solicitudes',
+        colorByPoint: true,
+         data: <?= $data3 ?>
+    }]
+});
+
+
+
+/* Highcharts.chart('container4', {
+    chart: {
+        type: 'bar'
+    },
+
+    title: {
+        text: 'Desktop screen readers'
+    },
+
+    caption: {
+        text: 'Basic bar chart demo'
+    },
+
+    xAxis: {
+        type: 'category'
+    },
+
+    series: [{
+        name: 'Percentage usage',
+        data: [{
+            name: 'JAWS',
+            y: 30.2,
+            accessibility: {
+                description: 'This is the most used desktop screen reader'
+            }
+        }, {
+            name: 'ZoomText',
+            y: 22.2
+        }, {
+            name: 'Window-Eyes',
+            y: 20.7
+        }, {
+            name: 'NVDA',
+            y: 14.6
+        }, {
+            name: 'VoiceOver',
+            y: 7.6
+        }, {
+            name: 'System Access To Go',
+            y: 1.5
+        }, {
+            name: 'ChromeVox',
+            y: 0.3
+        }, {
+            name: 'Other',
+            y: 2.9
+        }]
+    }, {
+        name: 'Test values',
+        data: [3, 6, 8, 10, 4, 1, 1, 0]
+    }]
+});
+ */
+
 
  </script>
 @endsection
