@@ -50,22 +50,19 @@ Inicio
                 para prevenir, mitigar, compensar y manejar los efectos ambientales del proyecto, obra o actividad
                 autorizada, sin disponer sobre el otorgamiento de los permisos, autorizaciones o concesiones para el
                 git uso, aprovechamiento o movilización de los recursos naturales renovables.</p>
-            <a href="{{ url('/motos' ) }}" class="btn btn-primary stretched-link btn-sm">
-            <i class="fas fa-igloo"></i>Conocer mas</a>
+
         </div>
        </div>
     </div>
     <div class="col">
       <div class="card" >
-        <img src="/img/2.jpg" class="card-img-top" alt="imagen2">
+        <img src="/img/2.jpg" class="" alt="imagen2">
         <div class="card-body">
             <h5 class="card-title">Ambiental Unica</h5>
             <p class="card-text">Es la otorgada por la autoridad ambiental competente y que, a solicitud del peticionario,
                 incluye los permisos, autorizaciones o concesiones, necesarios para el desarrollo del proyecto,
                 obra o actividad. La vigencia de estos permisos, concesiones y autorizaciones de acuerdo con su naturaleza,
                  podrá ser la misma de la licencia ambiental</p>
-            <a href="{{ url('/#' ) }}" class="btn btn-primary stretched-link btn-sm">
-            <i class="fas fa-igloo"></i>Conocer mas</a>
         </div>
       </div>
     </div>
@@ -78,8 +75,6 @@ Inicio
             <p class="card-text"> La licencia ambiental global puede ser ordinaria o única. Es de competencia exclusiva del
                 Ministerio del Medio Ambiente, y en virtud de ella se autorizan todas las obras o actividades relacionadas
                 con la explotación de campos petrolíferos y de gas.</p>
-            <a href="{{ url('/#' ) }}" class="btn btn-primary stretched-link btn-sm">
-            <i class="fas fa-igloo"></i>Conocer mas</a>
         </div>
        </div>
     </div>
@@ -88,30 +83,7 @@ Inicio
 
 <br>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-<i class="fas fa-rocket"></i>
-  Launch demo
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        el cuerpo del modal
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 <div class="container">
 <hr>
  <div class="row">
