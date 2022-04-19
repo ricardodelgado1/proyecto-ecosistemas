@@ -9,7 +9,6 @@ Route::get('/', function () {
 });
 
 
-
 Route::get('/', 'App\\Http\\Controllers\\LicenseController@getIndex');
 Route::get('home', 'App\\Http\\Controllers\\LicenseController@getIndex');
 
