@@ -88,6 +88,7 @@ class APILicenciasController extends Controller
     {
         //
         $licencia= Licencia::findOrFail($id);
+
         $licencia->nombre = $request->nombre;
         $licencia->solicitante = $request->solicitante;
         $licencia->fecha = $request->fecha;
