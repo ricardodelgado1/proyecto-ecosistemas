@@ -15,13 +15,13 @@ Inicio
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/4.jpg" class="d-block w-100 h-20" alt="1">
+      <img src="/img/4.4.jpg" class="d-block w-100 h-20" alt="1">
     </div>
     <div class="carousel-item">
-      <img src="/img/3.jpg" class="d-block w-100 h-20" alt="2">
+      <img src="/img/3.3.jpg" class="d-block w-100 h-20" alt="2">
     </div>
     <div class="carousel-item">
-      <img src="/img/6.jpg" class="d-block w-100 h-20" alt="3">
+      <img src="/img/6.6.jpg" class="d-block w-100 h-20" alt="3">
     </div>
 
   </div>
@@ -42,7 +42,7 @@ Inicio
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col ">
        <div class="card" >
-        <img src="/img/1.jpg" class="card-img-top" alt="imagen1">
+        <img src="/img/1.1.jpg" class="card-img-top" alt="imagen1">
         <div class="card-body">
             <h5 class="card-title">Ambiental Ordinaria</h5>
             <p class="card-text">Es la otorgada por la autoridad ambiental competente y en la cual se establecen
@@ -56,7 +56,7 @@ Inicio
     </div>
     <div class="col">
       <div class="card" >
-        <img src="/img/2.jpg" class="" alt="imagen2">
+        <img src="/img/2.2.jpg" class="" alt="imagen2">
         <div class="card-body">
             <h5 class="card-title">Ambiental Unica</h5>
             <p class="card-text">Es la otorgada por la autoridad ambiental competente y que, a solicitud del peticionario,
@@ -69,7 +69,7 @@ Inicio
     <div class="col">
       <div class="card">
       <div class="card">
-        <img src="/img/5.jpg" class="card-img-top" alt="imagen3">
+        <img src="/img/5.5.jpg" class="card-img-top" alt="imagen3">
         <div class="card-body">
             <h5 class="card-title">Ambiental Global</h5>
             <p class="card-text"> La licencia ambiental global puede ser ordinaria o única. Es de competencia exclusiva del
