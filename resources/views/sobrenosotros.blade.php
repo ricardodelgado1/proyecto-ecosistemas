@@ -38,7 +38,7 @@ Sobre nosotros
 						</tr>
                         <tr>
 							<td>
-								<img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="" width="100" height="100">
+								<img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" width="100" height="100">
 								<a href="#" class="user-link">Jairo Rosero</a>
 
 							</td>
@@ -54,7 +54,7 @@ Sobre nosotros
 						</tr>
 						<tr>
 							<td>
-								<img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" width="100" height="100">
+								<img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="" width="100" height="100">
 								<a href="#" class="user-link">Esteban Meneses</a>
 
 							</td>
