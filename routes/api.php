@@ -22,14 +22,14 @@ Route::get('/v1/licencias', 'App\Http\Controllers\API\APILicenciasController@ind
 
 Route::get('/v1/licencias/{id}', 'App\Http\Controllers\API\APILicenciasController@show');
 
-Route::post('/v1/licencias', 'App\Http\Controllers\API\APILicenciasController@store');
+/* Route::post('/v1/licencias', 'App\Http\Controllers\API\APILicenciasController@store');
 
 Route::put('/v1/licencias/{id}', 'App\Http\Controllers\API\APILicenciasController@update');
 
 Route::delete('/v1/licencias/{id}', 'App\Http\Controllers\API\APILicenciasController@destroy');
-
-/* Route::post('/v1/licencias', 'App\Http\Controllers\API\APILicenciasController@store')->middleware('auth.basic');
+ */
+Route::post('/v1/licencias', 'App\Http\Controllers\API\APILicenciasController@store')->middleware('auth.basic');
 
 Route::put('/v1/licencias/{id}', 'App\Http\Controllers\API\APILicenciasController@update')->middleware('auth.basic');
 
-Route::delete('/v1/licencias/{id}', 'App\Http\Controllers\API\APILicenciasController@destroy')->middleware('auth.basic'); */
+Route::delete('/v1/licencias/{id}', 'App\Http\Controllers\API\APILicenciasController@destroy')->middleware('auth.basic');
