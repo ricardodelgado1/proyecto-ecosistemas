@@ -8,10 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-$app->get('/cowsay', function() use($app) {
-    $app['monolog']->addDebug('cowsay');
-    return "<pre>".\Cowsayphp\Cow::say("Cool beans")."</pre>";
-  });
+
 
 Route::get('/', 'App\\Http\\Controllers\\LicenseController@getIndex');
 Route::get('home', 'App\\Http\\Controllers\\LicenseController@getIndex');
